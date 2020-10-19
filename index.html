@@ -7,7 +7,7 @@
     <title>Pizza-Den</title>
 </head>
 <body>
-    <div id="header"> 
+<div id="header"> 
         <div id=nav>
             <li><a href="index.html">Home</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -16,11 +16,13 @@
             <h1>Pizaa Den</h1>
             <h2>Welcome to Pizza Den</h2>
         </div>
-        <button class="btn btn-outline-secondary btn-lg pulse ">Make 0rder Now!</button>
+        <button class="btn btn-success checkout ">Make 0rder Now!</button>
 
 
 
-    </div>
+</div>
+
+<div id="form">
 
     <form class="col-sm-6 offset-sm-3 text-center">
         <label>Pick your pizza Flavour:</label>
@@ -34,6 +36,7 @@
             <option value="macon">Chicken Macon/option>
             <option value="regina">Regina Pizza</option>
         </select>
+    
 
 
         <label>Chose Pizza Size:</label>
@@ -58,11 +61,40 @@
 
            
             <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
-                <a href="#">
+                <a href="#summary">
                     <button type="submit" class="btn btn-success checkout" id="checkout">
                     Place Order
                     </button>
                 </a>
+
+
+                <br>
+                <div class="cdata-overlay">
+                    <div class="customerdata row">
+                        <div class="col-sm-7"></div>
+                        <form action="" class="form-group col-sm-6 data">
+                            <label for="number"><h3>Order For Delivery</h3></label>
+                            <input type="text" class="form-control cdata" placeholder="Enter your Name:">
+                            <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
+                            <select class="custom-select custom-select-md mb-3" id="size" required>
+                                <option value="you location">Your Location</option>
+                                <option value="cbd">C.B.D</option>
+                                <option value="Westlands">Westlands</option>
+                                <option value="parklands">Parklands</option>
+                                <option value="Runda">Runda</option>
+                                <option value="karen">Karen</option>
+                                <option value="upperhill">Upperhill</option>
+                                <option value="Buruburu">Buruburu</option>
+                                <option value="Donholm">Donholm</option>
+                                <option value="Umoja">Umoja</option>
+                            </select>
+                            <button class="btn btn-success checkout">Make Delivery</button>
+                        </form>
+            
+                        
+                    </div>
+                </div>
+ </div>   
 
 
 
