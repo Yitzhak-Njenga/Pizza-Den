@@ -1,118 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://use.fontawesome.com/0f125c4b25.js"></script>
-    <title>Pizza-Den</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+
+    <title>Document</title>
 </head>
+
 <body>
-<div id="header"> 
-        <div id=nav>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="./html/contact.html">Contact</a></li>
-        </div>
-        <div id="title">
-            <h1>Pizaa Den</h1>
-            <h2>Welcome to Pizza Den</h2>
-        </div>
-        <button class="btn btn-success checkout ">Make 0rder Now!</button>
+    <div class="container-fluid barbez">
+        <nav class="navbar navbar-expand-md" style="background-color:#49170e">
+            <a href="#" class="navbar-brand"><img src="images/PIZZERO copy.png" width="250"></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarmenu">
+                <span class="nav-toggler-icon"><span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarmenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="navbar-nav"><a href="#" class="nav-link">Home</a></li>
+                    <li class="navbar-nav"><a href="#" class="nav-link">About us</a></li>
+                    <li class="navbar-nav"><a href="#" class="nav-link">Contacts </a></li>
+                </ul>
+            </div>
+
+        </nav>
+        <section>
+            <img src="./images/pizerro le pizza.jpg" class="pizzero image-fluid" width=100% height=80%>
+            <div class="intro">
+                <h3 style="color:yellow;" id="h3"><span>CASCADE LA PIZZA</span></h3>
+                <h1 style="text-align: center; font-size:70px; font-weight:bold; color:white;">HOUSE OF DELICIOUS PIZZA.
+                </h1>
+                <p style="text-align: center; color:white;">Beautifully done for beautiful people, for beautiful times ,
+                    to build beautiful memories, experience all this beauty.</p>
+            </div>
+
+        </section>
+        <section class="face">
+            <div class="welcome">
+                <img src="./images/Pizzero.jpg" width="800" class="back-g">
+                <div class="about">
+                    <h2>Welcome to:</h2>
+                    <h3 style="margin-left:-23%; font-size:50px;">Grand Restauranta:</h3>
+                    <p style="margin-left: -29%;">Welcome to soul food serve,finger licking well done pizzas. We know
+                    </p><br>
+                    <p style="margin-left: -15%;">how to
+                        keep you contented from the service to </p> <br>
+                    <p style="margin-left: -25%;">of your need for quality
+                        italian made pizza. We are here </p> <br>
+                    <p style="margin-left: -15%;">you. How best do you want your pizza? Get to</p> <br>
+                    <p style="margin-left: -29%;">customize your order, the first of it's kind offer. Join us in the
+                        kitchen!! Take care of you &#128523;</p>
+                    <button type="button" class="btn btn-outline-warning">Try it!</button>
+                </div>
+            </div>
+
+        </section>
+        <section id="portfolio">
+            <h2 class="spec">OUR SPECIALITY</h2>
+            <div class="row menu-row mb-4">
+                <div class="col-md-3 pizza-choice">
+                    <div class="card" id="hawaii">
+                        <img class="menu-images image-fluid" src="images/Hawaiian Pizza.jpg" alt="hawaiian pizza"
+                            width="100%">
+
+                        <p class="pizza-name" id="Hawaii">Hawaiian Pizza</p>
 
 
 
-</div>
+                    </div>
 
-<div id="form">
+                </div>
+                <div class="col-md-3 pizza-choice">
+                    <div class="card">
+                        <img class="menu-images image-fluid" src="images/Pepperoni.jpg" alt="Pepperoni" width="100%"
+                            height="340">
+                        <p class="pizza-name">Pepperoni Pizza</p>
 
-    <form class="col-sm-6 offset-sm-3 text-center">
-        <label>Pick your pizza Flavour:</label>
-        <select class="custom-select custom-select-md mb-3 flavour" required>
-            <option value="meatdeluxe">Meat Deluxe</option>
-            <option value="vegfeast">Veg Feast</option>
-            <option value="beef">Beef</option>
-            <option value="bbq">BBQ Steak</option>
-            <option value="boerewors">Spicy Boerewors</option>
-            <option value="hawaiian">Hawaiian</option>
-            <option value="macon">Chicken Macon/option>
-            <option value="regina">Regina Pizza</option>
-        </select>
-    
+                    </div>
 
+                </div>
+                <div class="col-md-3 pizza-choice">
+                    <div class="card">
+                        <img class="menu-images image-fluid" src="images/chicken mushroom.jpg" alt="chicken-mushroom"
+                            width="100%" height="340">
+                        <p class="pizza-name">Chicken-mushroom Pizza</p>
 
-        <label>Chose Pizza Size:</label>
-        <select class="custom-select custom-select-md mb-3" id="size" required>
-            <option value="regular">Regular @ 500</option>
-            <option value="medium">Medium @ 800</option>
-            <option value="large">Large @1000</option>
-        </select>
+                    </div>
 
-        <label>Select Your favourite Toppings</label>
-        <select class="custom-select custom-select-md mb-3" id="toppings" required>
-            <option value="cheese">Cheese @ sh. 100</option>
-            <option value="onions">Onions @ sh. 80</option>
-            <option value="sausage">Sausage @ 100</option>
-            <option value="black olive">Black Olive @ sh. 150</option>
-            <option value="mince">Mince @ sh. 100</option>
-            <option value="beef">Beef Peperoni @ sh. 130</option>
-            <option value="chicken">Periperi Chicken @ sh. 100</option>
-            </select>
-            <label for="number">Number of Pizza's</label>
-          
+                </div>
+                <div class="col-md-3 pizza-choice">
+                    <div class="card">
+                        <img class="menu-images image-fluid" src="images/3679241901_db27722824.jpg" alt="BBQ-chicken"
+                            width="100%" height="340">
+                        <p class="pizza-name">BBQ-chicken</p>
 
-           
-            <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
-                <a href="#summary">
-                    <button type="submit" class="btn btn-success checkout" id="checkout">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-                          </svg>Place Order
-                    </button>
-                </a>
+                    </div>
 
+                </div>
+            </div>
+            <div class="row menu-row">
+                <div class="col-md-3 pizza-choice">
+                    <div class="card">
+                        <img class="menu-images image-fluid" src="images/buffalo pizza.jpg" alt="Buffal pizza"
+                            width="100%">
+                        <p class="pizza-name">Buffalo Pizza</p>
 
-                <br>
-                <div class="cdata-overlay">
-                    <div class="customerdata row">
-                        <div class="col-sm-7"></div>
-                        <form action="" class="form-group col-sm-6 data">
-                            <br>
-                            <label for="delivery"><h3>Order For Delivery</h3></label>
-                            <input type="text" class="form-control cdata" placeholder="Enter your Name:"><br>
-                            <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
-                            <select class="custom-select custom-select-md mb-3" id="size" required>
-                                <option value="you location">Your Location</option>
-                                <option value="cbd">C.B.D</option>
-                                <option value="Westlands">Westlands</option>
-                                <option value="parklands">Parklands</option>
-                                <option value="Runda">Runda</option>
-                                <option value="karen">Karen</option>
-                                <option value="upperhill">Upperhill</option>
-                                <option value="Buruburu">Buruburu</option>
-                                <option value="Donholm">Donholm</option>
-                                <option value="Umoja">Umoja</option>
+                    </div>
+
+                </div>
+                <div class="col-md-3 pizza-choice">
+                    <div class="card">
+                        <img class="menu-images image-fluid" src="images/meat pizza.jpg" alt="Meat pizza" width="100%"
+                            height="340">
+                        <p class="pizza-name">Meat Pizza</p>
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 pizza-choice">
+                    <div class="card">
+                        <img class="menu-images image-fluid" src="images/deepdish pizza.jpg" alt="deepdish" width="100%"
+                            height="340">
+                        <p class="pizza-name">Deepdish Pizza</p>
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 pizza-choice">
+                    <div class="card">
+                        <img class="menu-images image-fluid" src="images/margherita.jpg" alt="Margherita" width="100%"
+                            height="340">
+                        <p class="pizza-name">BBQ-chicken</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="place-order">
+                <h3 style="text-align: center;"><a href = "#press">Place order</a></h3>
+            </div>
+
+        </section>
+        <!-- I'll have my pop here -->
+        <section>
+            <div class="ordering-plate" id="press">
+                <span class="close-thing">&times;</span>
+                <h3 class="sizes-available">Size Available</h3>
+                <div class="row">
+                    <div class="col-md-3 sizedenotions smallpizza">
+                        <img src="images/imagesize.png" id="small-size" class="imagesize">
+                        <h5>Small</h5>
+                        <p>ksh.400</p>
+
+                    </div>
+                    <div class="col-md-4 sizedenotions mediumpizza">
+                        <img src="images/imagesize.png" id="medium-size" class="imagesize">
+                        <h5>Medium</h5>
+                        <p>ksh.700</p>
+
+                    </div>
+                    <div class="col-md-5 sizedenotions largepizza">
+                        <img src="images/imagesize.png" id="small-size" class="imagesize">
+                        <h5>Large</h5>
+                        <p>ksh.1500</p>
+
+                    </div>
+                </div>
+                <form class="what-you-want">
+                    <div class="row">
+                        <div class="col-md-4 pizzatype">
+                            <label for="pizza" style="color:white;">Pizza Type</label>
+                            <select name="pizzatype" id="pizzatype" class="form-control">
+                                <option value="Hawaiian">Hawaiian Pizza</option>
+                                <option value="Pepperoni">Pepperoni Pizza</option>
+                                <option value="Chicken-mushroom">Chicken Mushroom Pizza</option>
+                                <option value="BBQ-chicken">BBQ chicken Pizza</option>
+                                <option value="Buffalo">Buffalo Pizza</option>
+                                <option value="Deepdish">Deepdish Pizza</option>
+                                <option value="Meat">Meat Pizza</option>
+                                <option value="Margherita">Margherita Pizza</option>
                             </select>
-                            <button class="btn btn-success checkout">Make Delivery</button>
-                        </form>
-            
-                        
+                        </div>
+                        <div class="col-md-4 crusttype">
+                            <label for="crust" style="color: white;">Crust</label>
+                            <select name="crust" id="crusttype" class="form-control">
+                                <option value="stuffed">Stuffed - Ksh.150</option>
+                                <option value="thick">Thick - Ksh.200</option>
+                                <option value="Crispy">Crispy(Thin) - Ksh.100</option>
+                                <option value="gluten-free">Gluten Free - Ksh.200</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 toppings">
+                            <label for="extra-toppings" style="color:white;">Toppings</label>
+                            <select name="extra-toppings" id="toppings" class="form-control">
+                                <option value="Mushrooms">Mushroom</option>
+                                <option value="Cheese">Cheese</option>
+                                <option value="Black-olives">Black-Olives</option>
+                                <option value="Radichio">Radichio</option>
+                                <option value="Bacon">Bacon</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 pizza-quantity">
+                            <label for="quantity" style="color:white;">How many do you want?</label>
+                            <input type="number" class="form-control" id="pizza-quantity" min="1" required>
+                        </div>
+                        <div class="col-md-4 delivery">
+                            <label for="delivery" style="color:white;">Delivery(300 Ksh) or Collect?</label>
+                            <select name="delivery" class="form-control" id="delivery">
+                                <option value="deliver">Delivery</option>
+                                <option value="collect">Collect</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 pizza-size">
+                            <label for="pizza-size" style="color:white;">Size</label>
+                            <select class="form-control" id="pizza-size">
+                                <option value="large">Large</option>
+                                <option value="medium">Medium</option>
+                                <option value="small">Small</option>
+                            </select>
+                        </div>
+                        <input type="submit" id="order-ready" class="btn">
+                </form>
+
+
+            </div>
+
+        </section>
+        <div id="footer-area">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <h5>Pizzerro</h5>
+                    <p>Want to find out more about us?</p>
+                    <ul class="footer-social list-inline">
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-footer">
+                        <h4>Support</h4>
+                        <ul class="link-area">
+
+                            <li><a href="#"><i class="fa fa-long-arrow-right"></i>Careers</a></li>
+                            <li><a href="#"><i class="fa fa-long-arrow-right"></i>FAQs</a></li>
+                            <li><a href="#"><i class="fa fa-long-arrow-right"></i>Policies</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-footer">
+                        <h4>Our contact</h4>
+                        <ul class="link-area">
+
+                            <li><a href="#"><i class="fa fa-phone"></i>+254234567</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>pizzaden@gmail.com</a></li>
+                            <li><a href="#"><i class="fa fa-map"></i>321,Westwood Lane</a></li>
+                            <li><a href="#"><i class="fa fa-globe"></i>www.pizzero.com</a></li>
+                        </ul>
                     </div>
                 </div>
 
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright-area text-center">
+                            <p>&copy; 2020,All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
- </div> 
- <div id="footer">
-    <i class="fa fa-facebook-square" aria-hidden="true"></i>
-    <i class="fa fa-instagram" aria-hidden="true"></i>
-    <i class="fa fa-twitter-square" aria-hidden="true"></i><br>
-    &copy; 2020 Pizza-Den<br>
-    All Right Reserved
-     
- </div>  
 
 
-
-
-<script src="./js/script.js"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
 </body>
+
 </html>
