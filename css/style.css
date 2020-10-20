@@ -2,14 +2,58 @@
     margin: 0;
     padding:0;
 }
-@font-face {
-    src:url("/images/DancingScript-VariableFont_wght.ttf");
-    font-family:curly;
+a{
+    color: #49170e;
+
+}
+a:hover{
+    border-bottom: 5px solid rgb(36, 207, 64);
+    color: white;
+    text-decoration: none;
+}
+
+#h3{
+    -webkit-animation: h3 20.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: h3 20.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+   
+@-webkit-keyframes h3 {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: none;
     }
-    
+    100% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+  }
+  @keyframes h3 {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: none;
+    }
+    100% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+  }
+  
     #h3 {
         text-align: center;
-        font-size: 40px;
+        font-size: 90px;
         font-family:curly;
         position:relative;
     }
@@ -76,25 +120,28 @@
         display:block;
         width:100px;
         height:2px;
-        background:goldenrod; 
+        background:rgb(36, 207, 64); 
         position: absolute;
         left:35%;
         top:50%;
         z-index:-.3;
+        display: none;
     }
     .spec:after {
         content: "";
         display:block;
         width:100px;
         height:2px;
-        background:goldenrod; 
+        background: rgb(36, 207, 64); 
         position: absolute;
         right:35%;
         top:50%;
         z-index:-.3;
+        margin-right: 20px;
+        display: none;
     }
     .place-order {
-        background-color: rgba(167, 40, 8, 0.8);
+        background-color: rgb(36, 207, 64);
         color:white;
         margin:0 40% 2% 40%;
         padding:1%;
@@ -103,14 +150,14 @@
     }
     .place-order:hover {
         cursor: pointer;
-        background-color: rgb(148, 113, 24);
+        background-color:rgb(36, 207, 64);
     }
     .ordering-plate {
         z-index: 1;
         position: absolute;
         top:0;
         bottom:0;
-        background-color:rgba(0, 0, 0, 0.6);
+        background-color:rgba(102, 99, 99, 0.6);
         margin:0 7% 0 7%;
         padding:2%;
         height:800px;
@@ -126,7 +173,7 @@
     }
     .close-thing:hover,
     .close:focus {
-        color:red;
+        color:rgb(36, 207, 64);
         cursor: pointer;
     }
     .imagesize {
@@ -135,17 +182,19 @@
     .sizes-available {
      font-weight: bold;
      color: white;
-     border-bottom: 4px solid;
-     border-top: 4px solid;
+     text-align: center;
      border-radius: 5px;
      margin-bottom:2%;
      padding:2%;
-     background-color: #49170e; 
+     background-color: #ec5914; 
+     border-radius: 50px;
+    box-shadow:  29px 29px 58px #ec5914, 
+             -29px -29px 58px #49170e;
     }
     #order-ready {
         width:25%;
         background-color: #49170e;
-        color:goldenrod;
+        color:#49170e;
         font-weight:bold;
         padding:20px;
         margin:3%;
@@ -167,7 +216,7 @@
     }
     #footer-area {
         padding: 90px 0 60px 0;
-        background: #49170e;
+        background: #ec5914;
         color:white;
     }
     .link-area li {
@@ -179,7 +228,7 @@
     align-items: center;
     }
     .copyright-area{
-        background:red;
+        background-color:rgb(36, 207, 64);
         padding:30px 0;
     }
     
