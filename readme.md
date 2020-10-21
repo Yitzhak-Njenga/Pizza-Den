@@ -4,7 +4,7 @@
 
 
 # Description.
-##### Delani Studio is a site built to practice concepts learnt including JQuery, bootstrap, javascript and working with APIS's.
+##### The Pizza Den’s diverse menu has something for everyone, including gluten-free alternatives. Enjoy a delicious meal in the comfort of our family restaurant or catch the Jets or Bombers in our lounge.
 
 ## Author
 
